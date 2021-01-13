@@ -4,3 +4,102 @@ Author: BAP5
 Description: Thème BAP Crunchy !
 Version: 1.0
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* barre de navigation */
+nav {
+    display: flex;
+    background-color: #FBFBFB;
+    align-items: center;
+    padding: 20px;
+}
+
+nav img {
+    height: 96px;
+    padding-right: 3%;
+}
+ul {    
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+}
+li {
+    
+    padding: 20px 3%;
+   list-style-type: none;
+    font-size: 27px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #E55039;
+}
+
+
+
+.background {
+    background-size: cover;
+}
+
+/* l'histoire du studio */
+
+.article {
+    margin-left: 71px;
+}
+.sous_titre_histoire {
+    color: #E55039;
+    margin-top: 80px;
+    margin-bottom: 75px;
+    font-size: 47px;
+}
+
+.paragraphe {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.ingenieur_3 {
+    margin-right: 56px;
+}
+
+
+
+/* crunchy Jump */
+
+.article_crunchy {
+    width: 100%;
+    display: flex;
+    padding-left: 92px;
+}
+.sous_titre_crunchy {
+    color: #E55039;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.paragraphe_crunchy {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: white;
+}
+.article_crunchy {
+    background-color: white;
+}
+
+.article_crunchy:nth-child(2n+1) {
+    background-color: #e55039;
+}
+.sous_titre_crunchy:nth-child(2n + 1) {
+    color: white;
+}
+
+.paragraphe_crunchy:nth-child(2n + 1) {
+    color: black;
+}
