@@ -9,7 +9,9 @@
 <header>
 
     <nav>
+        <a href="http://localhost/crunchyjumpBap5/">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
+            </a>
          <?php 
         wp_nav_menu( 
             array( 

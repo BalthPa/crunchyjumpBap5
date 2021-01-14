@@ -46,5 +46,6 @@ add_action( 'wp_enqueue_scripts', 'crunchy_register_assets' );
 
 register_nav_menus( array(
 	'main' => 'Menu Principal',
-	'footer' => 'Bas de page',
+    'footer' => 'Bas de page',
+    'equipe' => 'equipe',
 ) );

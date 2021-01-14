@@ -10,8 +10,10 @@
       
         	<?php the_post_thumbnail(); ?>
             
-            <?php the_content(); ?>
-<br>
+			<?php the_content(); ?>
+			
+			</article>
+
 	<?php endwhile; endif;
 	get_footer();
 ?>

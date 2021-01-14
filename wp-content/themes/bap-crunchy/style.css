@@ -10,47 +10,130 @@ Version: 1.0
     padding: 0;
 }
 /* barre de navigation */
-nav {
+header nav {
     display: flex;
     background-color: #FBFBFB;
     align-items: center;
     padding: 20px;
+    height: 169px;
 }
 
-nav img {
+header nav img {
     height: 96px;
+}
+
+header nav a:first-child {
     padding-right: 3%;
 }
-ul {    
+header ul {    
     display: flex;
     flex-direction: row;
-    width: 55%;
+    width: 85%;
 }
-li {
+header li {
     
-    padding: 20px 3%;
+    padding: 20px 2%;
    list-style-type: none;
     font-size: 27px;
+    width: 100%;
+    text-align: center;
 }
 
-li a {
+header li a {
     text-decoration: none;
+    color: black;
 }
 
-li:hover {
+header li:hover {
     background-color: #E55039;
 }
 
+header li a:hover {
+    color: white;
+}
 
 
-.background {
+
+header .background {
     background-size: cover;
+}
+
+
+/* footer */
+footer hr {
+    border: none;
+    height: 5px;
+    background-color: #e55039;
+    margin-bottom: 45px;
+}
+footer .logo {
+    height: 129px;
+    margin-right: 12%;
+    padding-top: 30px;
+}
+
+footer .crunchy {
+    height: 62px;
+}
+
+footer .firstsection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+footer div {
+    display: flex;
+    margin-left: 4%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li {
+    list-style-type: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+footer li:first-child {
+    font-size: 24px;
+    padding: 0 10px 17px 10px;
+    border-bottom: #E55039 solid 4px;
+}
+
+footer li:nth-child(2) {
+    margin-top: 30px;
+}
+
+footer .ullast {
+    margin-right: 13%;
+}
+footer .ullast li {
+    text-align: center;
+}
+
+footer .secondsection{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer span {
+    font-weight: 700;
+    color: #e55039;
 }
 
 /* l'histoire du studio */
 
 .article {
     margin-left: 71px;
+    display: flex;
 }
 .sous_titre_histoire {
     color: #E55039;
@@ -68,7 +151,9 @@ li:hover {
     margin-right: 56px;
 }
 
-
+.paragraphe_centre {
+    text-align: center;
+}
 
 /* crunchy Jump */
 
@@ -76,6 +161,10 @@ li:hover {
     width: 100%;
     display: flex;
     padding-left: 92px;
+}
+
+.image_crunchy {
+    height: 323px;
 }
 .sous_titre_crunchy {
     color: #E55039;
@@ -102,4 +191,113 @@ li:hover {
 
 .paragraphe_crunchy:nth-child(2n + 1) {
     color: black;
+}
+
+/* Recrutement */
+
+.article_recrutement {
+    width: 100%;
+    display: flex;
+    padding-left: 192px;
+}
+
+.titre_recrutement {
+    margin-top: 77px;
+    font-size: 36px;
+}
+
+.sous_titre_recrutement {
+    color: #E55039;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.paragraphe_recrutement {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    color: white;
+    width: 70%;
+}
+
+.article_recrutement:nth-child(2) {
+    margin-bottom: 140px;
+}
+
+
+.article_recrutement {
+    background-color: white;
+    font-size: 24px;
+}
+
+.article_recrutement:nth-child(2n+1) {
+    background-color: #e55039;
+}
+.sous_titre_recrutement:nth-child(2n + 1) {
+    color: white;
+}
+
+.paragraphe_recrutement:nth-child(2n + 1) {
+    color: black;
+}
+
+.liste_recrutement {
+    margin-left: 40px;
+}
+
+.colonne_recrutement {
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.paragraphe_colonne_recrutement {
+    color: white;
+    margin-top: 10px;
+}
+
+.article_recrutement figure {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.icon_recrutement img {
+    margin-right: 20px;
+    margin-top: -15px;
+}
+
+.titre_banniere_accueil, 
+.sous_titre_banniere_accueil,
+.separateur_banniere_accueil {
+    margin-left: 174px;
+    text-align: left;
+}
+
+.titre_banniere_accueil {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.separateur_banniere_accueil {
+    margin-bottom: 36px;
+    width: 156px;
+    height: 8px;
+    background: #FFFFFF;
+    border: none;
+}
+
+.sous_titre_banniere_accueil {
+    font-size: 18px;
+}
+
+.bouton_banniere_accueil {
+    text-align: right;
+    padding: 14px 71px;
+
+}
+
+.texte_bouton_banniere_accueil {
+    padding: 14px 71px;
 }
