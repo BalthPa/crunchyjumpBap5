@@ -9,10 +9,75 @@ Version: 1.0
     margin: 0;
     padding: 0;
 }
+
+/* font */
+
+.montserrat_normal_24 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.montserrat_normal_18 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+
+.montserrat_bold_64 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.montserrat_bold_46 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.montserrat_bold_36 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.montserrat_bold_24 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.montserrat_bold_24_upper {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.montserrat_bold_14 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
 /* barre de navigation */
 header nav {
     display: flex;
-    background-color: #FBFBFB;
+    background-color: #000000;
     align-items: center;
     padding: 20px;
     height: 169px;
@@ -41,16 +106,13 @@ header li {
 
 header li a {
     text-decoration: none;
-    color: black;
-}
-
-header li:hover {
-    background-color: #E55039;
+    color: rgb(255, 255, 255);
 }
 
 header li a:hover {
-    color: white;
+    color: #E55039;
 }
+
 
 
 
@@ -96,6 +158,7 @@ footer li {
     list-style-type: none;
     font-size: 14px;
     text-align: left;
+    width: 150px;
 }
 
 footer li:first-child {
@@ -132,43 +195,66 @@ footer span {
 /* l'histoire du studio */
 
 .article {
-    margin-left: 71px;
+    padding-left: 71px;
+    padding-right: 170px;
     display: flex;
+    background-color: black;
 }
+
+.article:nth-child(2n+1) {
+    background-color: #E5553D;
+}
+
+
 .sous_titre_histoire {
-    color: #E55039;
+    color: #ffffff;
     margin-top: 80px;
-    margin-bottom: 75px;
     font-size: 47px;
+}
+
+.separateur_histoire {
+    margin: 25px 0;
+    width: 276px;
+    height: 8px;
+    border: none;
+    background: #FFFFFF;
+}
+
+.droite {
+    right: 0;
+    text-align: right;
 }
 
 .paragraphe {
     font-size: 23px;
     margin-bottom: 12px;
+    color: white;
 }
 
-.ingenieur_3 {
-    margin-right: 56px;
-}
 
 .paragraphe_centre {
     text-align: center;
+    color: white;
+    background-color: #E5553D;
+    padding-bottom: 30px;
 }
 
 /* crunchy Jump */
 
 .article_crunchy {
-    width: 100%;
     display: flex;
-    padding-left: 92px;
+    padding: 63px 170px 55px 170px;
 }
 
 .image_crunchy {
-    height: 323px;
+    margin-bottom: 63px;
+    padding-bottom: 63px;
 }
+
+
 .sous_titre_crunchy {
-    color: #E55039;
-    margin-top: 40px;
+    color: #ffffff;
+    margin-top: 56px;
     margin-bottom: 30px;
     font-size: 36px;
 }
@@ -176,21 +262,34 @@ footer span {
 .paragraphe_crunchy {
     font-size: 24px;
     margin-bottom: 12px;
-    color: white;
-}
-.article_crunchy {
-    background-color: white;
+    color: rgb(255, 255, 255);
 }
 
-.article_crunchy:nth-child(2n+1) {
+
+.article_crunchy {
     background-color: #e55039;
 }
-.sous_titre_crunchy:nth-child(2n + 1) {
-    color: white;
+
+.article_crunchy:nth-child(3n+1) {
+    background-color: white;
+}
+.article_crunchy:nth-child(3n+1) .sous_titre_crunchy {
+    color: rgb(0, 0, 0);
 }
 
-.paragraphe_crunchy:nth-child(2n + 1) {
-    color: black;
+.article_crunchy:nth-child(3n+1) .paragraphe_crunchy {
+    color: rgb(0, 0, 0);
+}
+
+.article_crunchy:nth-child(3n+2) {
+    background-color: black;
+}
+.article_crunchy:nth-child(3n+2) .sous_titre_crunchy {
+    color: rgb(255, 255, 255);
+}
+
+.article_crunchy:nth-child(3n+2) .paragraphe_crunchy {
+    color: rgb(255, 255, 255);
 }
 
 /* Recrutement */
@@ -203,18 +302,24 @@ footer span {
 
 .titre_recrutement {
     margin-top: 77px;
-    font-size: 36px;
+    color: white;
 }
 
 .sous_titre_recrutement {
-    color: #E55039;
+    color: white;
     margin-top: 70px;
-    margin-bottom: 30px;
-    font-size: 24px;
+    color: white;
+}
+
+.separateur_recrutement {
+    margin: 21px 0;
+    width: 156px;
+    height: 8px;
+    border: none;
+    background: #FFFFFF;
 }
 
 .paragraphe_recrutement {
-    font-size: 24px;
     line-height: 30px;
     margin-bottom: 12px;
     color: white;
@@ -222,25 +327,19 @@ footer span {
 }
 
 .article_recrutement:nth-child(2) {
-    margin-bottom: 140px;
+    padding-bottom: 140px;
 }
 
 
 .article_recrutement {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     font-size: 24px;
 }
 
 .article_recrutement:nth-child(2n+1) {
     background-color: #e55039;
 }
-.sous_titre_recrutement:nth-child(2n + 1) {
-    color: white;
-}
 
-.paragraphe_recrutement:nth-child(2n + 1) {
-    color: black;
-}
 
 .liste_recrutement {
     margin-left: 40px;
@@ -267,9 +366,11 @@ footer span {
     margin-top: -15px;
 }
 
-.titre_banniere_accueil, 
-.sous_titre_banniere_accueil,
-.separateur_banniere_accueil {
+/* accueil */
+
+.banniere_orange .titre_banniere_accueil, 
+.banniere_orange .sous_titre_banniere_accueil,
+.banniere_orange .separateur_banniere_accueil {
     margin-left: 174px;
     text-align: left;
 }
@@ -300,4 +401,13 @@ footer span {
 
 .texte_bouton_banniere_accueil {
     padding: 14px 71px;
+}
+
+
+
+.banniere_accueil_crunchy .titre_banniere_accueil, 
+.banniere_accueil_crunchy .sous_titre_banniere_accueil,
+.banniere_accueil_crunchy .separateur_banniere_accueil {
+    margin-right: 180px;
+    text-align: right;
 }

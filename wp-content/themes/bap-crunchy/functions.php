@@ -48,4 +48,5 @@ register_nav_menus( array(
 	'main' => 'Menu Principal',
     'footer' => 'Bas de page',
     'equipe' => 'equipe',
+    'apropos' => 'A propos'
 ) );
