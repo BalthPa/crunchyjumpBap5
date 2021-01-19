@@ -411,3 +411,43 @@ footer span {
     margin-right: 180px;
     text-align: right;
 }
+
+.article_accueil {
+    display: flex;
+    padding: 63px 170px 55px 170px;
+}
+
+.image_accueil {
+    margin-bottom: 63px;
+    padding-bottom: 63px;
+}
+
+
+.sous_titre_accueil {
+    color: #ffffff;
+    margin-top: 56px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.paragraphe_accueil {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+}
+
+
+.article_accueil {
+    background-color: #000000;
+}
+
+.article_accueil:nth-child(2n+1) {
+    background-color: white;
+}
+.article_accueil:nth-child(2n+1) .sous_titre_accueil {
+    color: rgb(0, 0, 0);
+}
+
+.article_accueil:nth-child(2n+1) .paragraphe_accueil {
+    color: rgb(0, 0, 0);
+}
